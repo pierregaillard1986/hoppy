@@ -14,9 +14,18 @@ const routes = ($routeProvider, $httpProvider) => {
             controller: 'loginController',
             controllerAs: 'vm'
         })
-        .otherwise({
-            redirectTo: '/'
-        })
+
+    .when('/discussions', {
+        templateUrl: 'views/discussions.html',
+    })
+
+    .when('/settings', {
+        templateUrl: 'views/settings.html',
+    })
+
+    .otherwise({
+        redirectTo: '/'
+    })
 
     $httpProvider.interceptors.push(($q, $location, $rootScope, $window, sessionFactory) => {
         return {
