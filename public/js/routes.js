@@ -9,6 +9,24 @@ const routes = ($routeProvider, $httpProvider) => {
                 connected: checkIsConnected
             }
         })
+        .when('/user1', {
+            templateUrl: 'views/user1.html',
+        })
+        .when('/user2', {
+            templateUrl: 'views/user2.html',
+        })
+        .when('/user3', {
+            templateUrl: 'views/user3.html',
+        })
+        .when('/user4', {
+            templateUrl: 'views/user4.html',
+        })
+        .when('/user5', {
+            templateUrl: 'views/user5.html',
+        })
+        .when('/user6', {
+            templateUrl: 'views/user6.html',
+        })
         .when('/login', {
             templateUrl: 'views/login.html',
             controller: 'loginController',
