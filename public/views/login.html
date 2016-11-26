@@ -1,27 +1,32 @@
-<div class="row">
-    <div class="col l6 m8 s12 offset-l3 offset-m2">
-        <form class="form-horizontal" name="formConnect">
-            <div class="form-group col s10 offset-s1">
-                <label for="email" class="control-label">Identifiant</label>
-                <input type="email" class="form-control" id="email" placeholder="Email" ng-model='vm.email' ng-required='true'>
-            </div>
-            <div class="form-group col s10 offset-s1">
-                <label for="password" class="control-label center">Mot de passe</label>
-                <input type="password" class="form-control" id="password" placeholder="Password" ng-model='vm.password' ng-required='true'>
-            </div>
-            <div class="form-group s12">
-              <div class="col s3 offset-s3">
-                <button ng-click='vm.login()' ng-disabled="formConnect.$invalid" class="btn btn-primary pull-right">se connecter</button>
+
+<div class="container">
+  <div class="row">
+      <div class=" card col l8 m10 s12 offset-l2 offset-m1">
+          <form class="form-horizontal" name="formConnect">
+              <div class="input-field col s10 offset-s1">
+                <i class="material-icons prefix">mail_outline</i>
+                  <label for="email" class="control-label"></label>
+                  <input type="email" class="form-control" id="email" placeholder="Identifiant" ng-model='vm.email' ng-required='true'>
               </div>
-              <div class="col s3 offset-s3">
-                <button ng-click='vm.createAccount()' ng-disabled="formConnect.$invalid" class="btn btn-link pull-right">s'enregistrer</button>
+              <div class="input-field col s10 offset-s1">
+                <i class="material-icons prefix">lock_outline</i>
+                  <label for="password" class="control-label center"></label>
+                  <input type="password" class="form-control" id="password" placeholder="Mot de passe" ng-model='vm.password' ng-required='true'>
               </div>
-            </div>
-        </form>
-        <div ng-show="(vm.loginMessage)" class="alert" ng-class="{'alert-danger': vm.loginMessage.type == 'error', 'alert-success': vm.loginMessage.type == 'success', 'alert-info': vm.loginMessage.type == 'info'}">
-            <h4>
-                <span class="glyphicon glyphicon-exclamation-sign pull-left"></span>&nbsp;{{vm.loginMessage.title}}</h4>
-            <p>{{vm.loginMessage.message}}</p>
-        </div>
-    </div>
+              <div class="form-group s12">
+                <div class="col s3 offset-s3">
+                  <button ng-click='vm.login()' ng-disabled="formConnect.$invalid" class="btn btn-primary pull-right">se connecter</button>
+                </div>
+                <div class="col s3 offset-s3">
+                  <button ng-click='vm.createAccount()' ng-disabled="formConnect.$invalid" class="btn btn-link pull-right">s'enregistrer</button>
+                </div>
+              </div>
+          </form>
+          <div ng-show="(vm.loginMessage)" class="alert" ng-class="{'alert-danger': vm.loginMessage.type == 'error', 'alert-success': vm.loginMessage.type == 'success', 'alert-info': vm.loginMessage.type == 'info'}">
+              <h4>
+                  <span class="glyphicon glyphicon-exclamation-sign pull-left"></span>&nbsp;{{vm.loginMessage.title}}</h4>
+              <p>{{vm.loginMessage.message}}</p>
+          </div>
+      </div>
+  </div>
 </div>

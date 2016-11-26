@@ -1,28 +1,66 @@
-<div id="login-page" class="row">
-    <div class="col l12 z-depth-6 card-panel z-depth-4">
-        <h1 class="center-align">Préférences</h1>
-        <form class="login-form">
-            <div class="row">
-                <div class="input-field col l12">
-                    <i class="material-icons prefix">perm_identity</i>
-                    <input class="validate" id="username" type="email">
-                    <label for="email" data-error="wrong" data-success="right">Username</label>
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <ul class="tabs">
+                <li class="tab col s6">
+                    <a class="active" href="#profil">Réglages</a>
+                </li>
+                <li class="tab col s6">
+                    <a href="#reglages">Profil</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="reglages col l12 z-depth-6 card-panel z-depth-4 bonjourjesuisunetab" id="reglages">
+        <h2 class="center-align">Mon profil</h2>
+        <form action="#">
+            <div class="file-field input-field">
+                <div class="btn waves-effect pink">
+                    <span>Ajoute une photo et ton choix :</span>
+                    <input type="file" multiple>
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" placeholder="">
                 </div>
             </div>
+        </form>
+        <form class="pref">
+            <div class="row">
+                <div class="input-field col s12">
+                  <p>
+                    décris toi en quelques lignes :
+                  </p>
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                </div>
+            </div>
+            <form action="#">
+                <p class="range-field">
+                    Indique ton âge :
+                    <input type="range" id="ageprof" min="18" max="100"/>
+                </p>
+            </form>
             <div class="row">
                 <div class="input-field col l12">
                     <i class="material-icons prefix">mail_outline</i>
                     <input class="validate" id="email" type="email">
-                    <label for="email" data-error="wrong" data-success="right">Email</label>
+                    <label for="email" data-error="wrong" data-success="right">Identifiant</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col l12">
                     <i class="material-icons prefix">lock_outline</i>
                     <input id="password" type="password">
-                    <label for="password">Password</label>
+                    <label for="password">Mot de passe</label>
                 </div>
             </div>
+        </form>
+        <div class="input-field col l12">
+            <a href="#" id="save" class="btn waves-effect pink col offset-l3 l6 offset-l3">Enregistrer</a>
+        </div>
+    </div>
+    <div class="col l12 z-depth-6 card-panel z-depth-4" id="profil">
+        <h2 class="center">Préférences de recherche</h2>
+        <form>
             <div class="row">
                 <div class="col offset-l2 l4">
                     <p>
@@ -136,3 +174,8 @@
         </form>
     </div>
 </div>
+<script>
+    $(document).ready(function() {
+        $('ul.tabs').tabs();
+    });
+</script>
