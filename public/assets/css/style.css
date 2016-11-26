@@ -54,3 +54,8 @@ footer {
 .messagerie {
   padding: 10px !important;
 }
+
+#iconmenu {
+  margin-top: 25px;
+  position: absolute;
+}
