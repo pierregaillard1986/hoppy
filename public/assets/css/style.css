@@ -27,7 +27,7 @@ body {
 
 #save {
   margin-bottom : 10px;
-  background: #e6616b;
+  background: #e6616b !important;
 }
 
 footer {
