@@ -33,8 +33,12 @@ const routes = ($routeProvider, $httpProvider) => {
             controllerAs: 'vm'
         })
 
-    .when('/discussions', {
-        templateUrl: 'views/discussions.html',
+    .when('/messagerie', {
+        templateUrl: 'views/messagerie.html',
+    })
+
+    .when('/discussion', {
+        templateUrl: 'views/discussion.html',
     })
     .when('/discussion', {
         templateUrl: 'views/discussion.html',
