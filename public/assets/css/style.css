@@ -38,16 +38,15 @@ footer {
   height : 5%;
 }
 
-.avatarimg {
-  margin: 5vh;
+.avatar {
+  width: 40%;
 }
 
-.descriptionrow {
-  margin: 5vh;
-  padding-bottom: 5vh;
+.avatarimg {
+  margin : 5vh;
 }
 
 .description {
-  margin: 5vh;
-  height: 30vh !important;
+  height: 20vh;
+  margin: 3vh;
 }
