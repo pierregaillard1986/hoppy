@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hoopy - Settings</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style media="screen">
+            #login-page {
+                background: #385072;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="login-page" class="row">
+            <div class="col offset-l3 l6 offset-l3 z-depth-6 card-panel">
+                <h1 class="center-align">Préférences</h1>
+                <form class="login-form">
+                    <div class="row">
+                        <div class="input-field col l12">
+                            <i class="material-icons prefix">perm_identity</i>
+                            <input class="validate" id="username" type="email">
+                            <label for="email" data-error="wrong" data-success="right">Username</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col l12">
+                            <i class="material-icons prefix">mail_outline</i>
+                            <input class="validate" id="email" type="email">
+                            <label for="email" data-error="wrong" data-success="right">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col l12">
+                            <i class="material-icons prefix">lock_outline</i>
+                            <input id="password" type="password">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-l2 l4">
+                            <p>
+                                Je suis :
+                            </p>
+                            <p class="col l12">
+                                <input class="with-gap" name="group1" type="radio" id="test1"/>
+                                <label for="test1">Un Homme</label>
+                            </p>
+                            <p class="col l12">
+                                <input class="with-gap" name="group1" type="radio" id="test2"/>
+                                <label for="test2">Une Femme</label>
+                            </p>
+                            <p class="col l12">
+                                <input class="with-gap" name="group1" type="radio" id="test3"/>
+                                <label for="test3">Undefined</label>
+                            </p>
+                        </div>
+                        <div class="col l4 offset-l2">
+                            <p>
+                                Je recherche :
+                            </p>
+                            <p>
+                                <input type="checkbox" id="test4"/>
+                                <label for="test5">Un conseil</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="test5"/>
+                                <label for="test6">Une Femme</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="test6"/>
+                                <label for="test6">Undefined</label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-l2 l4">
+                            <p>
+                                Je veux :
+                            </p>
+                            <p>
+                                <input type="checkbox" id="test7"/>
+                                <label for="test5">Un conseil</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="test8"/>
+                                <label for="test6">Une Femme</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="test9"/>
+                                <label for="test6">Undefined</label>
+                            </p>
+                        </div>
+                        <div class="col l4 offset-l2">
+                            <p>
+                                Avec :
+                            </p>
+                            <p>
+                                <input type="checkbox" id="test10"/>
+                                <label for="test5">Un Homme</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="test11"/>
+                                <label for="test6">Une Femme</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="test12"/>
+                                <label for="test6">Undefined</label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="input-field col l12">
+                            <a href="#" class="btn waves-effect pink col offset-l3 l6 offset-l3">Login</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('select').material_select();
+            });
+        </script>
+    </body>
+</html>
