@@ -1,5 +1,5 @@
 body {
-  background : #385072;
+  background: url('../img/bg.png')
 }
 
 .burger {
@@ -27,6 +27,7 @@ body {
 
 #save {
   margin-bottom : 10px;
+  background: #e6616b;
 }
 
 footer {
