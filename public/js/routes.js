@@ -36,6 +36,9 @@ const routes = ($routeProvider, $httpProvider) => {
     .when('/discussions', {
         templateUrl: 'views/discussions.html',
     })
+    .when('/discussion', {
+        templateUrl: 'views/discussion.html',
+    })
 
     .when('/settings', {
         templateUrl: 'views/settings.html',
