@@ -1,8 +1,55 @@
 <div class="row burger">
     <div class="col s1">
-        <ng-include src="'views/sidenav.html'"></ng-include>
+        <ul id="slide-out" class="side-nav">
+            <li>
+                <div class="userView">
+                    <div class="background">
+                        <img src="assets/img/background-SN.jpg">
+                    </div>
+                    <a href="#!user"><img class="circle" src="assets/img/main.png"></a>
+                    <span class="white-text name">Jane Valentin</span>
+                    <span class="white-text email">janevalentin@gmail.com</span>
+                </div>
+            </li>
+            <li>
+                <a href="#/user1">
+                    <i class="material-icons">home</i>Accueil</a>
+            </li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li>
+                <a href="#/messagerie">
+                    <i class="material-icons">perm_identity</i>Messagerie</a>
+            </li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li>
+                <a href="#/settings">
+                    <i class="material-icons">settings</i>Préférences</a>
+            </li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li>
+                <a class="subheader"></a>
+            </li>
+            <li>
+                <a class="waves-effect" href="login.html">
+                    <i class="material-icons">exit_to_app</i>Se déconnecter</a>
+            </li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse">
+            <i class="material-icons">menu</i>
+        </a>
     </div>
     <div class="col l11 center">
         <img class="responsive-img" src="../assets/img/logohoppy.png" alt="" style="height: 150px;"/>
     </div>
 </div>
+<script>
+    $(document).ready(function() {
+        $(".button-collapse").sideNav();
+    });
+</script>
