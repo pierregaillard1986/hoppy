@@ -1,107 +1,138 @@
-<div class="container">
-    <div class="row">
-        <div class="col l4 m6 s12">
-            <p>
-                Je suis :
-            </p>
-            <p>
-                <input type="checkbox" id="homme1"/>
-                <label for="homme1">Un homme</label>
-            </p>
-            <p>
-                <input type="checkbox" id="femme1"/>
-                <label for="femme1">Une femme</label>
-            </p>
-            <p>
-                <input type="checkbox" id="undefined1"/>
-                <label for="undefined1">Undefined</label>
-            </p>
-        </div>
-        <div class="col l4 m6 s12">
-            <p>
-                Je recherche :
-            </p>
-            <p>
-                <input type="checkbox" id="conseil1"/>
-                <label for="conseil1">Un conseil</label>
-            </p>
-            <p>
-                <input type="checkbox" id="femme2"/>
-                <label for="femme2">Une Femme</label>
-            </p>
-            <p>
-                <input type="checkbox" id="undefined2"/>
-                <label for="undefined2">Undefined</label>
-            </p>
-        </div>
-        <div class="col l4 m6 s12">
-            <p>
-                Je veux :
-            </p>
-            <p>
-                <input type="checkbox" id="conseil2"/>
-                <label for="conseil2">Un conseil</label>
-            </p>
-            <p>
-                <input type="checkbox" id="tchat"/>
-                <label for="tchat">Un Tchat</label>
-            </p>
-            <p>
-                <input type="checkbox" id="+siaffinite"/>
-                <label for="+siaffinite">Plus si affinité</label>
-            </p>
-        </div>
-        <div class="col l4 m6 s12">
-            <p>
-                Avec :
-            </p>
-            <p>
-                <input type="checkbox" id="professionnel"/>
-                <label for="professionnel">Un professionnel</label>
-            </p>
-            <p>
-                <input type="checkbox" id="proche"/>
-                <label for="proche">Un proche</label>
-            </p>
-            <p>
-                <input type="checkbox" id="undefined4"/>
-                <label for="undefined4">Un patient</label>
-            </p>
-        </div>
-        <div class="col l4 m6 s12">
-          <p>
-            qui a :
-          </p>
-          <p>
-              <input type="checkbox" id="18/25"/>
-              <label for="18/25">De 18 à 25 ans</label>
-          </p>
-          <p>
-              <input type="checkbox" id="25/30"/>
-              <label for="25/30">De 25 à 35 ans</label>
-          </p>
-          <p>
-              <input type="checkbox" id="40/50"/>
-              <label for="40/50">De 35 à 50 ans</label>
-          </p>
-          <p>
-              <input type="checkbox" id="+50"/>
-              <label for="+50">Plus de 50 Ans</label>
-          </p>
-          <p>
-              <input type="checkbox" id="undefined5"/>
-              <label for="undefined5">Undefined</label>
-          </p>
-        </div>
-        <div class="col l4 m6 s12">
-          <p>
-            Dans un rayon de (km) :
-          </p>
-            <form action="#">
-                <p class="range-field">
-                    <input type="range" id="test5" min="0" max="500"/>
-                </p>
-            </form>
-        </div>
+<div id="login-page" class="row">
+    <div class="col l12 z-depth-6 card-panel z-depth-4">
+        <h1 class="center-align">Préférences</h1>
+        <form class="login-form">
+            <div class="row">
+                <div class="input-field col l12">
+                    <i class="material-icons prefix">perm_identity</i>
+                    <input class="validate" id="username" type="email">
+                    <label for="email" data-error="wrong" data-success="right">Username</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col l12">
+                    <i class="material-icons prefix">mail_outline</i>
+                    <input class="validate" id="email" type="email">
+                    <label for="email" data-error="wrong" data-success="right">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col l12">
+                    <i class="material-icons prefix">lock_outline</i>
+                    <input id="password" type="password">
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col offset-l2 l4">
+                    <p>
+                        Je suis :
+                    </p>
+                    <p class="col l12">
+                        <input class="with-gap" name="group1" type="radio" id="test1"/>
+                        <label for="test1">Un Homme</label>
+                    </p>
+                    <p class="col l12">
+                        <input class="with-gap" name="group1" type="radio" id="test2"/>
+                        <label for="test2">Une Femme</label>
+                    </p>
+                    <p class="col l12">
+                        <input class="with-gap" name="group1" type="radio" id="test3"/>
+                        <label for="test3">Undefined</label>
+                    </p>
+                </div>
+                <div class="col l4 offset-l2">
+                    <p>
+                        Je recherche :
+                    </p>
+                    <p>
+                        <input type="checkbox" id="test4"/>
+                        <label for="test4">Un conseil</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="test5"/>
+                        <label for="test5">Une Femme</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="test6"/>
+                        <label for="test6">Undefined</label>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col offset-l2 l4">
+                    <p>
+                        Je veux :
+                    </p>
+                    <p>
+                        <input type="checkbox" id="test7"/>
+                        <label for="test7">Un conseil</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="test8"/>
+                        <label for="test8">Une Femme</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="test9"/>
+                        <label for="test9">Undefined</label>
+                    </p>
+                </div>
+                <div class="col l4 offset-l2">
+                    <p>
+                        Avec :
+                    </p>
+                    <p>
+                        <input type="checkbox" id="test10"/>
+                        <label for="test10">Un professionnel</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="test11"/>
+                        <label for="test11">Un patient</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="test12"/>
+                        <label for="test12">Un proche de patient</label>
+                    </p>
+                </div>
+                <div class="col l4 offset-l2">
+                    <p>
+                        qui a :
+                    </p>
+                    <p>
+                        <input type="checkbox" id="18/25"/>
+                        <label for="18/25">De 18 à 25 ans</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="25/30"/>
+                        <label for="25/30">De 25 à 35 ans</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="40/50"/>
+                        <label for="40/50">De 35 à 50 ans</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="+50"/>
+                        <label for="+50">Plus de 50 Ans</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="undefined5"/>
+                        <label for="undefined5">Undefined</label>
+                    </p>
+                </div>
+                <div class="col l4 offset-l2">
+                    <p>
+                        Dans un rayon de (km) :
+                    </p>
+                    <form action="#">
+                        <p class="range-field">
+                            <input type="range" id="test5" min="0" max="500"/>
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <div class="input-field col l12">
+                <a href="#" id="save" class="btn waves-effect pink col offset-l3 l6 offset-l3">Enregistrer</a>
+            </div>
+        </form>
     </div>
 </div>

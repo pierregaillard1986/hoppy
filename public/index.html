@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     <body>
         <ng-include src="'views/sidenav.html'"></ng-include>
@@ -17,6 +17,7 @@
         <div class="container">
             <ng-view></ng-view>
         </div>
+        <ng-include src="'views/footer.html'"></ng-include>
         <script src="vendor/jquery/dist/jquery.min.js"></script>
         <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
@@ -35,8 +36,10 @@
         <script src="js/app.js"></script>
 
         <script>
-         $('.carousel.carousel-slider').carousel({full_width: true});
-
+            $(document).ready(function() {
+                $('select').material_select();
+                $('.carousel.carousel-slider').carousel({full_width: true});
+            });
         </script>
 
     </body>

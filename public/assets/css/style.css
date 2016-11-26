@@ -1,16 +1,53 @@
+body {
+  background : #385072;
+}
+
+.burger {
+  background-color : #e6616b;
+}
+
 .navbar-yellow {
-    background-color: #FFF94D;
-    border: none;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    border-radius: 0;
-    border-bottom: 2px solid black;
+  width            : 100vw;
+  margin           : 0;
+  padding          : 0;
+  border           : none;
+  border-bottom    : 2px solid black;
+  border-radius    : 0;
+  background-color : #FFF94D;
 }
+
 .navbar-brand img {
-    max-height: 100%;
-    transition: 0.8s;
+  max-height : 100%;
+  transition : 0.8s;
 }
+
 .navbar-brand:hover img {
-    transform: rotate(360deg);
+  transform : rotate(360deg);
+}
+
+#save {
+  margin-bottom : 10px;
+}
+
+footer {
+  background-color : #e6616b;
+}
+
+.socialmedia {
+  width  : 5%;
+  height : 5%;
+}
+
+.avatarimg {
+  margin: 5vh;
+}
+
+.descriptionrow {
+  margin: 5vh;
+  padding-bottom: 5vh;
+}
+
+.description {
+  margin: 5vh;
+  height: 30vh !important;
 }
